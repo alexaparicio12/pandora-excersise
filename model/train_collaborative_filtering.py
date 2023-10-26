@@ -18,8 +18,8 @@ def initialise_model() -> Model:
     """
     Initialises the model. Parameters have been optimised through experimentation.
     """
-    als_model = ALS(maxIter=10,
-                    regParam=0.01,
+    als_model = ALS(maxIter=15,
+                    regParam=0.07,
                     implicitPrefs=False,
                     rank=20,
                     userCol="customer_id_h",

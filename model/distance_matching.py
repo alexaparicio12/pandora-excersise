@@ -52,8 +52,8 @@ def calculate_euc_distance_col(product_data_lev: DataFrame, input_vec: T.array) 
     return product_data_dist
 
 
-def unify_distances(product_data_dist: DataFrame, categorical_param: float = 0.5,
-                    numerical_param: float = 0.5) -> ps.DataFrame:
+def unify_distances(product_data_dist: DataFrame, categorical_param: float = 0.8,
+                    numerical_param: float = 0.2) -> ps.DataFrame:
     """
     :param product_data_dist: DataFrame containing product data, as well as Levenshtein and Euclidean distances
     :param categorical_param: Weight associated to the Levenshtein distance component

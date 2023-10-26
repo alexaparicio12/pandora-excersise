@@ -207,7 +207,7 @@ def test_calculate_euc_distance_col(dummy_product_data_lev, dummy_input_vec, dum
 
 def test_unify_distances(dummy_product_data_euc, dummy_pd_spark_data):
     expected = dummy_pd_spark_data
-    actual = unify_distances(dummy_product_data_euc)
+    actual = unify_distances(dummy_product_data_euc, categorical_param=0.5, numerical_param=0.5)
     return assertPandasOnSparkEqual(actual, expected, checkExact=False)
 
 

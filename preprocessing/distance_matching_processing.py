@@ -4,7 +4,6 @@ import pyspark.pandas as ps
 from typing import List
 
 NUMERICAL_FEATURES = ['size', 'avg_value', 'sales_amt']
-#CATEGORICAL_FEATURES = ['category', 'collection', 'color', 'material', 'metal_type', 'stone']
 CATEGORICAL_FEATURES = ['category', 'collection', 'color', 'material', 'metal_type', 'stone', 'theme_id']
 
 

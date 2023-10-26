@@ -39,7 +39,6 @@ if __name__ == '__main__':
     product_data = create_category_string(product_data)
     numeric_data_vec = process_numerical_features(product_data)
     full_product_data = join_to_full_product_data(numeric_data_vec, product_data)
-    print(full_product_data.head())
     full_product_data = save_product_data(full_product_data, path='../Data/trained_data/full_product_data.parquet')
     print('API setup complete and models saved.')
     FIRST_TIME = False
