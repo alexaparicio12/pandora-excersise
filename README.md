@@ -1,4 +1,4 @@
-This model implements two different recommender engines, a proximity based matching and a collaborative filtering.
+This model implements two different recommender engines: a proximity based matching and a collaborative filtering.
 
 To run this model API:
 1. Please make sure that the orders_.parquet and product_.parquet files are saved in a folder called Data at the repo root level
